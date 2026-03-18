@@ -35,9 +35,21 @@ html {
   --section-title-color: var(--color-black);
 }
 
-body, a {
+body, a[href] {
   color: var(--text-color);
   text-decoration: none;
+}
+
+a[href] :visited {
+    font-style: italic;
+}
+
+a[href]:hover {
+    text-decoration: underline;
+}
+
+a[href]:active {
+    background-color: var(--color-light-grey);
 }
 
 body {
